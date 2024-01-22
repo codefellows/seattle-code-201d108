@@ -8,7 +8,7 @@ It's a way of storing and controlling versions of files on your computer.
 
 A cloud service where you can 'store' your versions online.
 
-## How to save versions on your computer:
+## How to save versions on your computer
 
  1. Make or move into the directory you want to 'save'.
  1. Initialize Git - in the terminal.
@@ -40,7 +40,7 @@ A cloud service where you can 'store' your versions online.
 
   At this point, your computer has taken a picture of the code at this moment and you are free to modify your files and repeat the cycle.
 
-## How to add a commit to GitHub:
+## How to add a commit to GitHub
 
  1. Log on to your account on GitHub, in the upper right hand corner select the *+* sign, from the drop down menu select NEW REPOSITORY.
 

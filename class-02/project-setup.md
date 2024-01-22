@@ -3,7 +3,7 @@
 1. Go to your profile page on GitHub, and in the upper right, click on the **+** and select "New repository".
 1. Give the repository a name and a description in the provided form fields.
 1. Check the box next to ***"Initialize this repository with a README"***.
-1. In the ***Add .gitignore*** menu, make no selection. We will manually add a .gitingnore in a later step.
+1. In the ***Add .gitignore*** menu, make no selection. We will manually add a .gitignore in a later step.
 1. In the ***Add a license*** menu, you have multiple options. Feel free to read about them and make a choice; for general open-source use, we recommend the MIT license.
 1. Click the green ***Create repository*** button.
 1. On the next screen, click the green ***Clone or download*** button on the right side of the screen. Copy the HTTPS link to clone the repository.
