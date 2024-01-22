@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first or second website</title>
+    <style>
+      h1 {
+        background-color: blue;
+        color: white;
+      }
+      p {
+        background-color: red;
+        color: white;
+      }
+      body {
+        padding: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        My Website Header!
+      </h1>
+    </header>
+    <main>
+      <p>
+        My Website text
+      </p>
+    </main>
+    <script>
+      let count = 0;
+      let question = 'How are you?';
+      let answer = prompt(question); // ask the user something, and return what they type.
+
+      let userLovesJS = confirm("Do you love JS??"); // ask the user something they can yes / no
+
+      let answerString = "Answer to question 1: " + answer + " " + "Answer to question 2: " + userLovesJS;
+
+      if (userLovesJS) {
+        alert('Great, me too!');
+      } else {
+        alert('Aww thats too bad :(');
+      }
+
+      alert(answerString);
+
+      document.write(answer); // outputs something the actual website;
+    </script>
+  </body>
+</html>
