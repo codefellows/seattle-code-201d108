@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* selecting HTML by id */
+    #groceries {
+      background-color: green;
+    }
+
+    #directions {
+      background-color: blue;
+    }
+
+    /* selecting HTML by class name */
+    .list-container {
+      border: 20px solid red;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- both classes and ids are added as attributes to our HTML tags, must go in the openning tag.-->
+  <ul id="groceries" class="list-container">
+    <li>Coconut</li>
+    <li>Banana</li>
+  </ul>
+
+  <ol id="directions" class="list-container">
+    <li>Leave drive way</li>
+    <li>Floor it</li>
+  </ol>
+  <script>
+    let milk = 50;
+
+    switch (milk) {
+      case 100:
+        console.log('I am full on milk');
+        break;
+      case 75:
+        console.log('Still pretty good on milk!');
+        break;
+      case 50:
+        console.log('I am about half full');
+        break;
+      case 25:
+        console.log('I am low on milk, please buy!');
+        break;
+      default:
+        console.log('I am not sure how much milk I have');
+    }
+
+    // ask the user if they are hungry
+    let isUserHungry = confirm('Are you hungry?');
+
+    if (isUserHungry) {
+      let favoriteFood = prompt('What is your favorite food?');
+      let arrayOfFoods = ["ramen", "pizza", "sushi", "sandwich"];
+
+
+      switch (favoriteFood) {
+        case arrayOfFoods[0]:
+          alert('I love ramen too!');
+          break;
+        case arrayOfFoods[1]:
+          alert('I love pizza too!');
+          break;
+        case arrayOfFoods[2]:
+          alert('I love sushi too!');
+          break;
+        case arrayOfFoods[3]:
+          alert('I love sandwiches too!');
+          break;
+        default:
+          alert('I have no suggestion for you');
+      }
+
+    } else {
+      alert('Sorry come back later');
+    }
+
+
+    let favoriteColor = prompt('What is your favorite color?');
+    switch (favoriteColor) {
+      case "red":
+        document.write(`<p style="color: ${favoriteColor}">Yay red!!</p>`);
+        break;
+      case "yellow":
+        document.write(`<p style="color: ${favoriteColor}">Yay yellow!!</p>`);
+        break;
+      case "blue":
+        document.write(`<p style="color: ${favoriteColor}">Yay blue!!</p>`);
+        break;
+      case "purple":
+        document.write(`<p style="color: ${favoriteColor}">Yay purple!!</p>`);
+        break;
+      default:
+        alert('Sorry I dont like that color');
+    }
+
+  </script>
+</body>
+
+</html>
