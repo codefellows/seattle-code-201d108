@@ -1,0 +1,14 @@
+  /* selecting HTML by id */
+  #groceries {
+    background-color: green;
+  }
+
+  #directions {
+    background-color: blue;
+  }
+
+  /* selecting HTML by class name */
+  .list-container {
+    border: 20px solid red;
+    color: white;
+  }
