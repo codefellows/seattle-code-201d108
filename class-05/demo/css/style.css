@@ -1,0 +1,51 @@
+h1 {
+  font-size: 50px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.image-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.image-container figcaption {
+  text-align: center;
+}
+#images {
+  width: 1000px;
+  margin: 0 auto;
+}
+.right {
+ float: right;
+}
+.left {
+  float: left;
+}
+.move-me {
+  /* position: relative; */
+  padding-left: 600px; 
+  /* right: 0; */
+}
+p {
+  max-width: 500px;
+  line-height: 30px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#images img {
+  max-width: 400px;
+}
