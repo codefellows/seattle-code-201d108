@@ -1,0 +1,23 @@
+.box {
+  display: inline-block;
+  border: thin solid red;
+  height: 100px;
+  width: 100px;
+}
+
+article {
+  width: 100px;
+  height: 200px;
+  border: thin solid blue;
+}
+
+#parent {
+  border: thin solid orange;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: moves the children along the main axis */
+  justify-content: space-around;
+  /* align-items: moves the children along the cross axis */
+  align-items: center; 
+}

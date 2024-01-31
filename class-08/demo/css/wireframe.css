@@ -1,0 +1,39 @@
+header {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#nav-bar p {
+  margin: 0 16px;
+}
+
+#main-article {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.article-image {
+  margin: 16px 0;
+}
+#image-text {
+  margin: 16px;
+}
