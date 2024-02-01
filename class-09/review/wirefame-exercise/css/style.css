@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+}
+#navbar-container {
+    display: flex;
+    background-color: rgb(50, 51, 51);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 195px;
+    margin: 0;
+}
+#nav-items-container {
+    width: 960px;
+    display: inline-flex;
+}
+.nav-item {
+    display: inline-flex;
+    align-self: center;
+    color: white;
+    text-decoration: none;
+    margin-right: 80px;
+}
+#logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#nav-div {
+    display: flex;
+    margin-left: 40px;
+}
+#hero-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#gallery-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#gallery-items {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+}
+#image-text-parent {
+    display: flex;
+    justify-content: center;
+}
+#image-text-child {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.text-image {
+    margin-right: 30px;
+}
+#article-button {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+article {
+    display: flex;
+    margin: 0;
+    height: 370px;
+    overflow: auto;
+}
+article p {
+    margin: 0;
+}
+button {
+    display: flex;
+    flex-direction: row;
+    align-self: self-end;
+    background-color: rgb(50, 51, 51);
+    text-align: center;
+    color: white;
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+    transition: background-color 0.35s ease;
+}
+button:hover {
+    background-color: #2980b9;
+}
+footer {
+    background-color: rgb(50, 51, 51);
+    height: 80px;
+}
