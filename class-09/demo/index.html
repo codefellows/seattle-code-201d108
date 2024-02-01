@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>HTML Forms!!</h1>
+    </header>
+    <main>
+      <form id="pokemon-form">
+        <fieldset>
+          <legend>Create a Pokemon</legend>
+          <div class="input-container">
+            <label for="pokemon-name">Name</label>
+            <input id="pokemon-name" type="text" placeholder="Pikachu">
+          </div>
+          <div class="input-container">
+            <label for="pokemon-ap">Attack Points</label>
+            <input id="pokemon-ap" type="number" placeholder="10">
+          </div>
+          <div class="input-container">
+            <label for="pokemon-hp">Health Points</label>
+            <input id="pokemon-hp" type="number" placeholder="10">
+          </div>
+          <!-- A button of type submit will fire the submit on the form -->
+          <button type="submit">Click Me!!</button>
+        </fieldset>
+      </form>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>

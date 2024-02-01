@@ -1,0 +1,28 @@
+#pokemon-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+#pokemon-form fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-container {
+  border: 3px solid lightblue;
+  width: 300px;
+  display: flex;
+  border-radius: 5px;
+  margin: 8px;
+  padding: 4px;
+}
+.input-container input {
+  border: none;
+  outline: none;
+}
+.input-container  label {
+  max-width: 100px;
+  margin-right: 4px;
+}
+button {
+  max-width: 200px;
+}
