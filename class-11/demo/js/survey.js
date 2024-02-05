@@ -37,6 +37,7 @@ console.log(goats);
 // add an event listener that runs some code when a goat picture is clicked.
 let goatImages = document.getElementById('goats');
 
+// when might you remove the event listener from the GoatImages HTML element
 // goatImages.removeEventListener()
 
 goatImages.addEventListener('click', function(event) {
