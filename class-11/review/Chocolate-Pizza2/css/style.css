@@ -1,0 +1,220 @@
+.hr {
+    background: url('../img/hr-img.png');
+    width: 100%;
+    height: 15px;
+}
+#header-bar {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+}
+#header-logo-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#social-rssmail {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+#logo-image {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    display: flex;
+}
+#header-text {
+    height: 100%;
+    margin: 0;
+    padding-left: 8px;
+}
+#header-text h1 {
+    margin-bottom: 0;
+    font-family: 'Pacifico', cursive;
+}
+#header-text p {
+    margin-top: 0;
+    text-transform: uppercase;
+    padding-top: 0;
+    font-size: 10px;
+}
+#choc-pizza-text {
+    display: flex;
+    border: blue solid;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+#choc-pizza-h1p {
+    display: flex;
+    border: greenyellow solid;
+    flex-direction: column;
+    align-items: start;
+}
+#choc-pizza-h1p h1 {
+    border: palevioletred solid;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+}
+#choc-pizza-h1p p {
+    border: black solid;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+#print-main-container {
+    border: brown solid;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+#print-container {
+    border: purple solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+}
+#print-container img {
+    display: flex;
+    height: 10px;
+    justify-content: center;
+    margin-right: 2px;
+}
+#print-container p {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+#print-img-text {
+    border: red solid;
+}
+#pizza-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#pizza-image img {
+    width: 100%;
+}
+#yellow-paper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+}
+#yellow-paper img {
+    width: 100%;
+}
+#overlay-list {
+    background: url('../img/list-bg.png');
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+    border: red solid;
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#overlay-list ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: greenyellow solid;
+    width: 450px;
+}
+.list-items {
+    border: blue solid;
+    display: flex;
+    justify-content: space-evenly;
+    width: 450px;
+}
+#overlay-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+#text-container {
+    text-indent: 3em;
+    margin-top: 30px;
+}
+#text-container p {
+    margin-bottom: 30px;
+}
+#img-button {
+    border: red solid;
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+}
+#van-img {
+    border: blue solid;
+    display: flex;
+    width: 140px;
+    margin-right: 20px;
+}
+#van-img img {
+    display: flex;
+    width: 140px;
+}
+#van-name-text {
+    border: greenyellow solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#van-name-text h1 {
+    border: black solid;
+    margin: 0;
+    height: 50%;
+    font-family: 'Noto Serif', serif;
+    font-size: 30px;
+}
+#van-name-text p {
+    border: brown solid;
+    font-size: 20px;
+    margin: 0;
+    height: 50%;
+    font-family: 'Noto Serif', serif;
+}
+#share-button {
+    border: palevioletred solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 60px;
+}
+button {
+    height: 80px;
+    width: 250px;
+    margin-left: 40px;
+    background-color: rgb(183, 91, 0);
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+#small-fork {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+#small-fork hr {
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#footer-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
