@@ -5,11 +5,31 @@
   </head>
   <body>
     <header>
-      <h1>HTML Media!</h1>
+      <h1>HTML Audio and Video</h1>
+      <nav>
+        <a href="./grid.html">CSS Grid Demo</a>
+      </nav>
     </header>
     <main>
-      <audio src="assets/audio/levees.m4a" controls></audio>
-      <video src="assets/video/demi.mov" controls></video>
+      <audio
+        id="audio"
+        src="assets/audio/levees.m4a"
+        controls
+        loop
+        muted
+        autoplay
+      ></audio>
+      <video
+        id="video"
+        src="assets/video/demi.mov"
+        loop
+        muted
+        autoplay
+      ></video>
+      <!-- <audio id="audio" src="assets/audio/levees.m4a" loop></audio>
+      <video id="video" src="assets/video/demi.mov" loop></video> -->
+      <button id="start">Toggle my Media!</button>
     </main>
+    <script src="js/media.js"></script>
   </body>
 </html>

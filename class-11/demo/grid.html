@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grids!</title>
+  <style>
+    #gridify-me {
+      display: grid;
+      grid-template-rows: 150px 100px;
+      grid-template-columns: 100px 150px;
+      border: thin solid blue;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      border: thin solid red;
+    }
+    .box2 {
+      /* width: 100px;
+      height: 100px; */
+      border: thin solid purple;
+    }
+
+    #threeByThree {
+      display: grid;
+      grid-template-rows: 50px 125px 50px;
+      grid-template-columns: 50px 125px 50px;
+    }
+    #top {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    #middle {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    #bottom {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 3;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- <div id="gridify-me">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div> -->
+
+    <div id="threeByThree">
+      <div class="box2" id="top"></div>
+      <div class="box2" id="middle"></div>
+      <div class="box2" id="bottom"></div>
+    </div>
+  </main>
+</body>
+</html>
