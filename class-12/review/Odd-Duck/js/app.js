@@ -6,6 +6,8 @@ let ducks = []; // create an empty array
 let image1 = document.getElementById('image1');
 let image2 = document.getElementById('image2');
 let image3 = document.getElementById('image3');
+let totalRounds = 5;
+let currentRound = 0;
 
 // constructor function -> 'this' is the object we are creating.
 function Duck(url, name) {
@@ -33,7 +35,7 @@ let odd15 = new Duck('img/unicorn.jpg', 'uni');
 let odd16 = new Duck('img/water-can.jpg', 'watercan');
 let odd17 = new Duck('img/wine-glass.jpg', 'wine');
 
-ducks.push(odd1, odd2, odd3, odd4, odd5, odd6, odd7, odd8, odd9, odd10, odd11, odd12, odd12, odd13, odd14, odd15, odd16, odd17);
+ducks.push(odd1, odd2, odd3, odd4, odd5, odd6, odd7, odd8, odd9, odd10, odd11, odd12, odd13, odd14, odd15, odd16, odd17);
 
 function renderImage(image, duck) {
   image.setAttribute('src', duck.url);
@@ -55,17 +57,41 @@ let oddImages = document.getElementById('odd');
 // when might you remove the event listener from the OddImages HTML element
 // oddImages.removeEventListener()
 
-oddImages.addEventListener('click', function(event) {
+let handleClick = function (event) {
   event.preventDefault();
   console.log(event.target.alt); // event.target -> whatever element was interacted with.
 
   // add 1 to number of clicks
-    // search our array of ducks for the goat object that matched the alt
+  // search our array of ducks for the goat object that matched the alt
   findDuck(event.target.alt);
 
   // show 2 different images after a picture is clicked.
   renderNewDucks();
-});
+  currentRound = roundCount(totalRounds, currentRound);
+}
+oddImages.addEventListener('click', handleClick);
+
+function roundCount(total, current) {
+  if (current < total) {
+    current++;
+  } else {
+    oddImages.removeEventListener('click', handleClick);
+    // render the voting results.
+    console.log('HERE IS THE DATA!!', ducks);
+    showResults();  
+    alert('Voting Complete!!');
+  }
+  return current;
+}
+
+function showResults() {
+  let list = document.getElementById('results-list');
+  for (let i = 0; i < ducks.length; i++) {
+    let paragraph = document.createElement('p');
+    paragraph.textContent = `${ducks[i].name} had ${ducks[i].clicks} votes, and was seen ${ducks[i].timesShown} times.`
+    list.appendChild(paragraph);
+  }
+}
 
 function findDuck(alt) {
   for (let i =0; i< ducks.length; i++) {
@@ -77,7 +103,7 @@ function findDuck(alt) {
 }
 
 function renderNewDucks() {
-  // generate a random index betwee 0 and the length of our ducks array
+  // generate a random index between 0 and the length of our ducks array
   let index1 = Math.floor(Math.random() * ducks.length);
   let index2 = Math.floor(Math.random() * ducks.length);
   let index3 = Math.floor(Math.random() * ducks.length);
