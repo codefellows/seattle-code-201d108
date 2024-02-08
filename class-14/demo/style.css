@@ -1,0 +1,61 @@
+#animate-me {
+  position: relative;
+  transition: 500ms;
+}
+
+.stop:hover {
+  margin-top: -50px;
+}
+
+#ground {
+  width: 500px;
+  height: 10px;
+  background-color: brown;
+  position: fixed;
+  bottom: 300px;
+}
+
+#complex {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bell {
+  width: 60px;
+  margin-bottom: 16px;
+  animation-name: shake;
+  animation-duration: 100ms;
+  animation-delay: 2s;
+  animation-iteration-count: 10;
+}
+
+#clock {
+  animation-name: spin;
+  animation-duration: 2s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
