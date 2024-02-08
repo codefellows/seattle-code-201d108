@@ -1,18 +1,24 @@
+header {
+  position: relative;
+  z-index: 10000;
+}
+
 #animate-me {
   position: relative;
   transition: 500ms;
 }
 
-.stop:hover {
+.jump:hover {
   margin-top: -50px;
+  margin-bottom: 50px
 }
 
 #ground {
   width: 500px;
   height: 10px;
   background-color: brown;
-  position: fixed;
-  bottom: 300px;
+  position: relative;
+  bottom: 0px;
 }
 
 #complex {
